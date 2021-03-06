@@ -45,5 +45,5 @@ jobs:
     needs: [job1, job2, job3]
 
     steps:
-      - name: print date macos
+      - name: print date ubuntu depending
         run: date
