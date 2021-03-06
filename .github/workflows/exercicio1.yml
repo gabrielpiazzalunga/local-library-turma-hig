@@ -16,7 +16,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  - job1:
+  job1:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -25,14 +25,15 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: print date ubuntu
       - run: date
-  - job2:
+  
+  job2:
     runs-on: windows-latest
 
     steps:
       - name: print date windows
       - run: date
   
-  - job3:
+  job3:
     runs-on: macos-latest
 
     steps:
