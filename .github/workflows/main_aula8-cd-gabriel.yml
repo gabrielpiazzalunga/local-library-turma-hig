@@ -32,8 +32,8 @@ jobs:
       with:
         name: node-app
         path: .
-        
-    linter:
+
+  linter:
     name: Lint code base
     runs-on: ubuntu-latest
     
