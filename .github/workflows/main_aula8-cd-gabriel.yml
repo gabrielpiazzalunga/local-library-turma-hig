@@ -87,10 +87,6 @@ jobs:
       uses: actions/download-artifact@v2
       with:
         name: node-app
-    
-    - name: Set Env Variables
-      run: |
-        set MONGODB_URI=${{ env.DB_URI }
 
     - name: 'Deploy to Azure Web App'
       id: deploy-to-webapp
