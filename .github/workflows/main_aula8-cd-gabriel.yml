@@ -88,7 +88,6 @@ jobs:
     environment:
       name: 'production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
-      DB_URI: $${{ secrets.DB_URI }}
     
     env:
       DB_URI: $${{ secrets.DB_URI }}
